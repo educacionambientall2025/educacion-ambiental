@@ -21,6 +21,13 @@
       padding: 40px 20px;
     }
 
+    header img {
+      width: 340px;
+      margin-top: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
     nav {
       background-color: #4caf50;
       text-align: center;
@@ -58,6 +65,61 @@
       padding-bottom: 10px;
     }
 
+    .imagenes {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+
+    .imagenes img {
+      width: 280px;
+      border-radius: 10px;
+      margin: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    form {
+      background-color: #f8fff8;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #3d9140;
+      cursor: pointer;
+    }
+
     footer {
       background-color: #2e8b57;
       color: white;
@@ -73,6 +135,10 @@
       margin-top: 20px;
     }
 
+    .horarios h3 {
+      margin-top: 0;
+    }
+
     .confirmacion {
       color: green;
       font-weight: bold;
@@ -82,7 +148,6 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>Conciencia y Educación Ambiental</h1>
     <p>Aprendamos a cuidar nuestro planeta con responsabilidad y acción</p>
@@ -98,19 +163,20 @@
   <section id="educacion">
     <h2>La Educación Ambiental: Base del Cambio</h2>
 
-    <img src="la-granja.png" alt="Libro abierto con árbol representando la educación ambiental"
+    <img src="la-granja.png" 
+         alt="Libro abierto con árbol representando la educación ambiental"
          style="width: 60%; display: block; margin: 20px auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" />
 
-    <p>La educación ambiental busca que todas las personas comprendan...</p>
+    <p>La educación ambiental busca que todas las personas comprendan la estrecha relación...</p>
     <p>En los últimos años, los problemas ambientales como la contaminación...</p>
-    <p>Educar desde edades tempranas es esencial para formar una sociedad...</p>
+    <p>Educar desde edades tempranas es esencial...</p>
   </section>
 
   <!-- Sección 3R -->
   <section id="3r">
     <h2>Las 3R: Reducir, Reutilizar y Reciclar</h2>
 
-    <!-- 🎥 VIDEO AGREGADO AQUÍ -->
+    <!-- VIDEO AGREGADO -->
     <video controls style="width: 80%; display: block; margin: 25px auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
       <source src="Video_Arreglado_Para_Trabajo.mp4" type="video/mp4">
       Tu navegador no soporta videos HTML5.
@@ -121,22 +187,20 @@
          style="width: 80%; display: block; margin: 25px auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" />
 
     <p>
-      Las <strong>3R</strong> son una filosofía ambiental que nos invita a modificar nuestros hábitos...
+      Las <strong>3R</strong> son una filosofía ambiental que nos invita a modificar nuestros hábitos de consumo...
     </p>
-
     <ul>
       <li><strong>Reducir:</strong> Se debe tratar de reducir el consumo...</li>
-      <li><strong>Reutilizar:</strong> Dar la mayor utilidad posible a los objetos...</li>
-      <li><strong>Reciclar:</strong> Someter materiales a un proceso para volver a utilizarlos...</li>
+      <li><strong>Reutilizar:</strong> Volver a usar los objetos...</li>
+      <li><strong>Reciclar:</strong> Procesar materiales para darles nueva vida...</li>
     </ul>
-
-    <p>Adoptar las 3R en nuestro día a día es una manera efectiva de proteger el planeta.</p>
+    <p>Adoptar las 3R es clave para cuidar el planeta.</p>
   </section>
 
   <!-- Sección Reuniones -->
   <section id="reuniones">
     <h2>Charlas y Reuniones Ambientales</h2>
-    <p>Participa en nuestras charlas educativas sobre medio ambiente...</p>
+    <p>Participa en nuestras charlas educativas...</p>
 
     <div class="horarios">
       <h3>🕓 Horarios disponibles</h3>
@@ -144,15 +208,14 @@
         <li><strong>Lunes:</strong> 10:00 AM - 12:00 PM / 2:00 PM - 4:00 PM</li>
         <li><strong>Miércoles:</strong> 10:00 AM - 12:00 PM / 2:00 PM - 4:00 PM</li>
       </ul>
-      <p>Selecciona tu día y horario al registrarte.</p>
     </div>
 
     <form id="formulario" action="https://formspree.io/f/mkgaqjaa" method="POST">
       <label for="nombre">Nombre completo:</label>
-      <input type="text" name="nombre" id="nombre" required />
+      <input type="text" name="nombre" id="nombre" placeholder="Tu nombre completo" required />
 
       <label for="email">Correo electrónico:</label>
-      <input type="email" name="email" id="email" required />
+      <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required />
 
       <label for="dia">Día de reunión:</label>
       <select name="dia" id="dia" required>
@@ -169,13 +232,13 @@
       </select>
 
       <label for="mensaje">Mensaje o tema de interés:</label>
-      <textarea name="mensaje" id="mensaje" rows="4"></textarea>
+      <textarea name="mensaje" id="mensaje" rows="4" placeholder="Escribe aquí tu interés o consulta..."></textarea>
 
       <button type="submit">📅 Agendar Reunión</button>
     </form>
 
     <p class="confirmacion" id="confirmacion">
-      ✅ ¡Tu reunión ha sido agendada correctamente!
+      ✅ ¡Tu reunión ha sido agendada correctamente!.
     </p>
   </section>
 
@@ -208,6 +271,5 @@
       }
     });
   </script>
-
 </body>
 </html>
