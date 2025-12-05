@@ -4,125 +4,263 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Conciencia y Educación Ambiental</title>
-
   <style>
+    /* Estilos generales */
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #eaf4f4;
+      background-color: #eaf4ec;
       color: #333;
     }
 
     header {
-      background-color: #2d6a4f;
+      background-color: #2e8b57;
       color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 40px 20px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    nav {
+      background-color: #4caf50;
+      text-align: center;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    /* Secciones más anchas */
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #dcedc8;
+    }
+
     section {
-      max-width: 1300px;
-      margin: 20px auto;
-      background: white;
-      padding: 25px;
+      max-width: 1300px; /* MÁS ANCHO PARA TEXTO */
+      margin: auto;
+      padding: 50px 25px;
+      background-color: white;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
     }
 
     h2 {
-      color: #1b4332;
+      color: #2e8b57;
+      border-bottom: 3px solid #4caf50;
+      padding-bottom: 10px;
     }
 
-    /* Imágenes más pequeñas */
-    .img-principal {
-      width: 45%;
-      display: block;
-      margin: 20px auto;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    ul {
+      line-height: 1.8;
     }
 
-    .img-mediana {
-      width: 60%;
-      display: block;
-      margin: 25px auto;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    form {
+      background-color: #f8fff8;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
     }
 
-    /* Video reducido */
-    video {
-      width: 55%;
-      display: block;
-      margin: 25px auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    input,
+    select,
+    textarea,
+    button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #3d9140;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .horarios {
+      background-color: #dff2e1;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .confirmacion {
+      color: green;
+      font-weight: bold;
+      display: none;
+      margin-top: 15px;
     }
   </style>
 </head>
-
 <body>
-
   <header>
     <h1>Conciencia y Educación Ambiental</h1>
+    <p>Aprendamos a cuidar nuestro planeta con responsabilidad y acción</p>
   </header>
 
-  <!-- SECCIÓN 1 -->
-  <section>
-    <h2>¿Qué es la Educación Ambiental?</h2>
+  <nav>
+    <a href="#educacion">Educación Ambiental</a>
+    <a href="#3r">Las 3R</a>
+    <a href="#reuniones">Charlas y Reuniones</a>
+  </nav>
 
-    <img src="educacion-ambiental.jpg" alt="Educación ambiental" class="img-principal">
+  <!-- Sección Educación Ambiental -->
+  <section id="educacion">
+    <h2>La Educación Ambiental: Base del Cambio</h2>
+
+    <img src="la-granja.png" 
+         alt="Libro abierto con árbol representando la educación ambiental"
+         style="width: 55%; display: block; margin: 20px auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" />
 
     <p>
-      La educación ambiental es un proceso que permite que las personas comprendan la importancia de cuidar el entorno donde vivimos. 
-      A través de ella aprendemos sobre la contaminación, el reciclaje, la biodiversidad y cómo nuestras acciones diarias tienen un impacto directo en la naturaleza.
+      La educación ambiental busca que todas las personas comprendan la estrecha relación que existe entre los seres humanos y la naturaleza, fomentando el respeto, la conservación y el uso responsable de los recursos naturales. A través de ella, se promueve una forma de pensar y actuar más consciente.
     </p>
 
     <p>
-      También busca fomentar valores como el respeto, la responsabilidad y la participación activa en soluciones ambientales. 
-      La meta principal es que cada persona logre tomar decisiones conscientes para proteger el planeta y asegurar un futuro más sostenible.
+      En los últimos años, los problemas ambientales como la contaminación, la deforestación, la pérdida de biodiversidad y el cambio climático se han incrementado considerablemente.
     </p>
 
     <p>
-      Hoy más que nunca, la educación ambiental es clave para enfrentar desafíos globales como el cambio climático, la pérdida de especies y la contaminación de los ecosistemas.
-      Si todos aportamos un poco, el impacto positivo puede ser enorme.
-    </p>
-  </section>
-
-  <!-- SECCIÓN 2 -->
-  <section>
-    <h2>Reducción, Reutilización y Reciclaje (Las 3R)</h2>
-
-    <img src="3r.jpg" alt="Las 3R del reciclaje" class="img-mediana">
-
-    <p>
-      Las 3R son un conjunto de acciones que ayudan a disminuir la contaminación y el desperdicio. 
-      Reducir significa consumir menos productos innecesarios; Reutilizar consiste en darle una segunda vida a los objetos; 
-      y Reciclar implica separar y transformar materiales para convertirlos en nuevos productos.
+      Educar desde edades tempranas es esencial para formar una sociedad comprometida con la sostenibilidad y el cuidado del entorno.
     </p>
   </section>
 
-  <!-- SECCIÓN 3 -->
-  <section>
-    <h2>Video Complementario</h2>
+  <!-- Sección 3R -->
+  <section id="3r">
+    <h2>Las 3R: Reducir, Reutilizar y Reciclar</h2>
 
-    <video controls>
+    <!-- VIDEO MÁS PEQUEÑO -->
+    <video controls style="width: 55%; display: block; margin: 25px auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
       <source src="Video_Arreglado_Para_Trabajo.mp4" type="video/mp4">
       Tu navegador no soporta videos HTML5.
     </video>
 
+    <img src="reducir-reutilizar-reciclar.jpg" 
+         alt="Ilustración sobre reducir, reutilizar y reciclar"
+         style="width: 60%; display: block; margin: 25px auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" />
+
     <p>
-      Este video explica de forma visual cómo nuestras decisiones cotidianas influyen en el medio ambiente, 
-      y muestra ejemplos reales de acciones simples que cualquiera puede aplicar en su vida diaria.
+      Las <strong>3R</strong> son una filosofía ambiental que nos invita a modificar nuestros hábitos de consumo para generar un impacto positivo.
+    </p>
+
+    <ul>
+      <li><strong>Reducir:</strong> Disminuir el consumo de productos directos para reducir basura y gastos.</li>
+      <li><strong>Reutilizar:</strong> Volver a usar objetos todo lo posible antes de desecharlos.</li>
+      <li><strong>Reciclar:</strong> Transformar materiales para crear nuevos productos y evitar más contaminación.</li>
+    </ul>
+
+    <p>
+      Adoptar las 3R es una de las maneras más efectivas de combatir el cambio climático y reducir la contaminación.
     </p>
   </section>
+
+  <!-- Sección Reuniones -->
+  <section id="reuniones">
+    <h2>Charlas y Reuniones Ambientales</h2>
+    <p>
+      Participa en nuestras charlas educativas sobre medio ambiente, reciclaje y sustentabilidad.
+    </p>
+
+    <div class="horarios">
+      <h3>🕓 Horarios disponibles</h3>
+
+      <ul>
+        <li><strong>Lunes:</strong> 10:00 AM - 12:00 PM / 2:00 PM - 4:00 PM</li>
+        <li><strong>Miércoles:</strong> 10:00 AM - 12:00 PM / 2:00 PM - 4:00 PM</li>
+      </ul>
+
+      <p>Selecciona tu día y horario al registrarte.</p>
+    </div>
+
+    <!-- FORMULARIO -->
+    <form id="formulario" action="https://formspree.io/f/mkgaqjaa" method="POST">
+
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" name="nombre" id="nombre" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="dia">Día de reunión:</label>
+      <select name="dia" id="dia" required>
+        <option value="">-- Selecciona un día --</option>
+        <option value="Lunes">Lunes</option>
+        <option value="Miércoles">Miércoles</option>
+      </select>
+
+      <label for="horario">Horario:</label>
+      <select name="horario" id="horario" required>
+        <option value="">-- Selecciona un horario --</option>
+        <option value="10-12">10:00 AM - 12:00 PM</option>
+        <option value="14-16">2:00 PM - 4:00 PM</option>
+      </select>
+
+      <label for="mensaje">Mensaje o tema de interés:</label>
+      <textarea name="mensaje" id="mensaje" rows="4"></textarea>
+
+      <button type="submit">📅 Agendar Reunión</button>
+    </form>
+
+    <p class="confirmacion" id="confirmacion">
+      ✅ ¡Tu reunión ha sido agendada correctamente!
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Conciencia Verde - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById("formulario");
+    const confirmacion = document.getElementById("confirmacion");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        confirmacion.style.display = "block";
+        form.reset();
+        setTimeout(() => {
+          confirmacion.style.display = "none";
+        }, 5000);
+      } else {
+        alert("❌ Hubo un error al enviar el formulario. Intenta nuevamente.");
+      }
+    });
+  </script>
 
 </body>
 </html>
