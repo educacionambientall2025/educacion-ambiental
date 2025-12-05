@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Conciencia y Educación Ambiental</title>
   <style>
-    /* Estilos generales */
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
@@ -58,8 +57,11 @@
       padding-bottom: 10px;
     }
 
-    ul {
-      line-height: 1.8;
+    .horarios {
+      background-color: #dff2e1;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
     }
 
     form {
@@ -70,10 +72,7 @@
       margin-top: 20px;
     }
 
-    input,
-    select,
-    textarea,
-    button {
+    input, select, textarea, button {
       width: 100%;
       margin: 10px 0;
       padding: 12px;
@@ -85,9 +84,8 @@
     button {
       background-color: #4caf50;
       color: white;
-      font-size: 16px;
       border: none;
-      transition: background-color 0.3s;
+      font-size: 16px;
     }
 
     button:hover {
@@ -103,13 +101,6 @@
       margin-top: 40px;
     }
 
-    .horarios {
-      background-color: #dff2e1;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-
     .confirmacion {
       color: green;
       font-weight: bold;
@@ -119,6 +110,7 @@
   </style>
 </head>
 <body>
+
   <header>
     <h1>Conciencia y Educación Ambiental</h1>
     <p>Aprendamos a cuidar nuestro planeta con responsabilidad y acción</p>
@@ -130,7 +122,7 @@
     <a href="#reuniones">Charlas y Reuniones</a>
   </nav>
 
-  <!-- Sección Educación Ambiental -->
+  <!-- EDUCACIÓN AMBIENTAL -->
   <section id="educacion">
     <h2>La Educación Ambiental: Base del Cambio</h2>
 
@@ -139,27 +131,27 @@
          style="width: 40%; display: block; margin: 20px auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" />
 
     <p>
-      La educación ambiental busca que todas las personas comprendan la estrecha relación entre los seres humanos y la naturaleza. Su objetivo principal es fomentar el respeto, la conservación y el uso responsable de los recursos naturales, promoviendo una forma de pensar y actuar más consciente y sostenible.
+      La educación ambiental busca que todas las personas comprendan la relación entre los seres humanos y la naturaleza. Su principal objetivo es promover el respeto, la conservación y el uso responsable de los recursos naturales.
     </p>
 
     <p>
-      En los últimos años, los problemas ambientales como la contaminación del aire y del agua, la deforestación, el exceso de basura, la pérdida de biodiversidad y el cambio climático se han intensificado. La educación ambiental surge como una herramienta fundamental para informar, sensibilizar y movilizar a la comunidad.
+      Hoy en día enfrentamos problemas como la contaminación del aire y del agua, la acumulación de basura, la destrucción de ecosistemas, el cambio climático y la pérdida de biodiversidad. La educación ambiental es fundamental para comprender estas situaciones y actuar correctamente frente a ellas.
     </p>
 
     <p>
-      Un individuo educado ambientalmente no solo comprende los problemas, sino que también actúa: reduce su consumo, separa residuos, participa en iniciativas ecológicas y se convierte en un agente de cambio dentro de su entorno.
+      Al educarnos ambientalmente, aprendemos a tomar decisiones responsables, consumir menos, reciclar más y cuidar nuestro entorno. También fomenta valores como la empatía, la responsabilidad y el compromiso con las generaciones futuras.
     </p>
 
     <p>
-      Además, fomenta valores como la responsabilidad, la empatía hacia los seres vivos y el compromiso con las generaciones futuras. La educación ambiental es esencial desde edades tempranas, ya que permite formar ciudadanos más conscientes del impacto de sus decisiones.
+      La educación ambiental no solo entrega conocimientos, sino que inspira cambios reales en la vida diaria: desde separar residuos, ahorrar agua y energía, hasta participar en actividades comunitarias para proteger áreas verdes y animales.
     </p>
 
     <p>
-      En resumen, la educación ambiental no solo enseña, sino que inspira a construir un futuro más verde, limpio y justo para todos.
+      En resumen, la educación ambiental es una herramienta clave para construir un futuro más saludable, sostenible y equilibrado para todas las personas y especies del planeta.
     </p>
   </section>
 
-  <!-- Sección 3R -->
+  <!-- 3R -->
   <section id="3r">
     <h2>Las 3R: Reducir, Reutilizar y Reciclar</h2>
 
@@ -175,7 +167,7 @@
     <ul>
       <li><strong>Reducir:</strong> Disminuir el uso de productos innecesarios para evitar generar basura.</li>
       <li><strong>Reutilizar:</strong> Dar un segundo uso a objetos y materiales antes de desecharlos.</li>
-      <li><strong>Reciclar:</strong> Transformar materiales como plástico, vidrio, cartón y metales en nuevos productos.</li>
+      <li><strong>Reciclar:</strong> Transformar materiales usados en nuevos productos para disminuir la contaminación.</li>
     </ul>
 
     <p>
@@ -183,7 +175,7 @@
     </p>
   </section>
 
-  <!-- Sección Reuniones -->
+  <!-- REUNIONES -->
   <section id="reuniones">
     <h2>Charlas y Reuniones Ambientales</h2>
     <p>
@@ -192,46 +184,41 @@
 
     <div class="horarios">
       <h3>🕓 Horarios disponibles</h3>
-
       <ul>
         <li><strong>Lunes:</strong> 10:00 AM - 12:00 PM / 2:00 PM - 4:00 PM</li>
         <li><strong>Miércoles:</strong> 10:00 AM - 12:00 PM / 2:00 PM - 4:00 PM</li>
       </ul>
-
-      <p>Selecciona tu día y horario al registrarte.</p>
     </div>
 
     <form id="formulario" action="https://formspree.io/f/mkgaqjaa" method="POST">
 
-      <label for="nombre">Nombre completo:</label>
-      <input type="text" name="nombre" id="nombre" required />
+      <label>Nombre completo:</label>
+      <input type="text" name="nombre" required />
 
-      <label for="email">Correo electrónico:</label>
-      <input type="email" name="email" id="email" required />
+      <label>Correo electrónico:</label>
+      <input type="email" name="email" required />
 
-      <label for="dia">Día de reunión:</label>
-      <select name="dia" id="dia" required>
+      <label>Día de reunión:</label>
+      <select name="dia" required>
         <option value="">-- Selecciona un día --</option>
         <option value="Lunes">Lunes</option>
         <option value="Miércoles">Miércoles</option>
       </select>
 
-      <label for="horario">Horario:</label>
-      <select name="horario" id="horario" required>
+      <label>Horario:</label>
+      <select name="horario" required>
         <option value="">-- Selecciona un horario --</option>
         <option value="10-12">10:00 AM - 12:00 PM</option>
         <option value="14-16">2:00 PM - 4:00 PM</option>
       </select>
 
-      <label for="mensaje">Mensaje o tema de interés:</label>
-      <textarea name="mensaje" id="mensaje" rows="4"></textarea>
+      <label>Mensaje o tema de interés:</label>
+      <textarea name="mensaje" rows="4"></textarea>
 
       <button type="submit">📅 Agendar Reunión</button>
     </form>
 
-    <p class="confirmacion" id="confirmacion">
-      ✅ ¡Tu reunión ha sido agendada correctamente!
-    </p>
+    <p class="confirmacion" id="confirmacion">✅ ¡Tu reunión ha sido agendada correctamente!</p>
   </section>
 
   <footer>
@@ -255,9 +242,7 @@
       if (response.ok) {
         confirmacion.style.display = "block";
         form.reset();
-        setTimeout(() => {
-          confirmacion.style.display = "none";
-        }, 5000);
+        setTimeout(() => confirmacion.style.display = "none", 5000);
       } else {
         alert("❌ Hubo un error al enviar el formulario. Intenta nuevamente.");
       }
